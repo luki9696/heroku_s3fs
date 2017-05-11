@@ -57,4 +57,3 @@ fi
 
 export S3_CMD=$cache_dir/s3fs/usr/local/bin/s3fs
 cd $pwd
-exit 0
