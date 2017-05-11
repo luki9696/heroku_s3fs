@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+pwd= `pwd`
 build_dir=$1
 cache_dir=$1/vendor/s3fs
 env_dir=$3
@@ -55,4 +56,5 @@ if [ ! -f /app/$AWSMOUNTPOINT ]; then
 fi
 
 export S3_CMD=$cache_dir/s3fs/usr/local/bin/s3fs
+cd $pwd
 exit 0
